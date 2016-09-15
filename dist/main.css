@@ -1,0 +1,152 @@
+body {
+  background-size: 825px;
+  background-origin: border-box; }
+  body nav h3 {
+    display: inline-block;
+    text-align: center; }
+  body nav .spotify-logo {
+    width: 3%; }
+  body nav a {
+    float: right;
+    color: black;
+    margin-right: 1%; }
+  body nav .nav-search {
+    display: inline-block;
+    width: 30%;
+    margin-left: 1%;
+    vertical-align: super; }
+  body .search-box {
+    display: block;
+    width: 40%;
+    margin: 10% auto 0;
+    overflow: hidden; }
+    body .search-box .search-input {
+      width: 100%;
+      height: 6vh;
+      font-size: 1rem; }
+    body .search-box .search-btn {
+      width: 100%;
+      border: 0;
+      font-size: 1rem;
+      height: 6vh; }
+  body .results-holder h2 {
+    text-align: center;
+    font-size: 2rem; }
+  body .results-holder .results-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none; }
+    body .results-holder .results-list .single-result-container {
+      flex-basis: 24%;
+      margin-bottom: 7%;
+      margin-right: 1%;
+      background-color: white;
+      display: block;
+      position: relative; }
+      body .results-holder .results-list .single-result-container .single-result-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; }
+      body .results-holder .results-list .single-result-container .single-result-name {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.3rem;
+        text-align: center;
+        border-bottom: 1px solid black; }
+      body .results-holder .results-list .single-result-container .vote-btn {
+        display: block;
+        position: absolute;
+        right: 0;
+        border: 0;
+        padding: 4%;
+        font-size: 0.8rem; }
+
+.vote-container h2 {
+  text-align: center;
+  font-size: 2rem; }
+
+.vote-list-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 5%; }
+  .vote-list-holder .single-vote-holder {
+    width: 25%;
+    padding: 1%;
+    background-color: white;
+    margin-right: 4%;
+    margin-bottom: 2%;
+    flex-basis: 27%;
+    border-bottom: 1px solid black; }
+    .vote-list-holder .single-vote-holder .single-vote-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border: 2px solid black;
+      border-radius: 5px; }
+    .vote-list-holder .single-vote-holder .single-vote-name {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem; }
+    .vote-list-holder .single-vote-holder .single-vote-count {
+      text-align: center;
+      margin-bottom: 0; }
+      .vote-list-holder .single-vote-holder .single-vote-count span {
+        font-weight: bold; }
+
+.login-container {
+  width: 40%;
+  margin: 8% auto 0; }
+  .login-container .login-name {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 3%; }
+  .login-container .login-password {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 3%; }
+  .login-container .login-btn {
+    display: block;
+    width: 100%;
+    border: 0;
+    font-size: 1.3rem;
+    padding: 3%; }
+  .login-container .login-copy {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    text-align: center;
+    background: white; }
+    .login-container .login-copy a {
+      color: black; }
+
+@media (max-width: 480px) {
+  .vote-list-holder .single-vote-holder {
+    margin: 1rem auto 0;
+    flex-basis: 90%; }
+
+  body nav .spotify-logo {
+    width: 5%; }
+  body nav .nav-search {
+    width: auto; }
+  body .results-holder h2 {
+    margin-bottom: 0; }
+  body .results-holder .results-list .single-result-container {
+    flex-basis: 90%;
+    margin: 0 auto;
+    margin-top: 4rem; }
+  body .search-box {
+    width: 70%;
+    margin-top: 15%; }
+
+  .login-container {
+    width: 70%; } }
+
+/*# sourceMappingURL=main.css.map */
