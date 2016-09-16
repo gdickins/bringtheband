@@ -39,6 +39,7 @@ const Session = Backbone.Model.extend({
         this.set({
           username: response.username, authtoken: response._kmd.authtoken, id: response._id, name: response.name
         });
+        localStorage.setItem("authtoken", response._kmd.authtoken);
       })
       .fail((error) => {
         console.error('Your data wasn\'t passed through')

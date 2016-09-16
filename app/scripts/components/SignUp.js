@@ -1,6 +1,7 @@
 import React from 'react';
 import store from '../store';
-import { Link } from 'react-router';
+import { hashHistory, Link } from 'react-router';
+
 
 const SignUp = React.createClass({
   getInitialState: function() {
@@ -21,9 +22,8 @@ componentWillUnmount: function() {
 
 submitHandler: function (evt) {
   evt.preventDefault();
-  console.log('You signed up!');
+  console.log(this.refs);
   let data = {
-    name: this.refs.name.value,
     username: this.refs.username.value,
     password: this.refs.password.value
   }
